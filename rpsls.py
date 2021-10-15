@@ -4,10 +4,13 @@ from typing import AsyncIterable
 
 display_greeting = print("Welcome to Rock, Paper, Scissors, Lizard, Spock!!!")
 
-ready_to_play = input("Would you like to play a game of RPSLS?")
-    answer = yes
-        if answer = True
-
+answer = input("Would you like to play a game of RPSLS?")
+if answer == 'yes':
+    print("Here are the rules:", "\n" "1. Paper beats Rock", "\n" "2. Rock beats Scissors", "\n" "3. Paper covers Rock", "\n" "4. Rock crushes Lizard", "\n" "5. Lizard poisons Spock", "\n" "6. Spock smashes Scissors", "\n" "7. Scissors decapitates Lizard", "\n" "8. Lizard eats Paper", "\n" "9. Paper disproves Spock", "\n" "10. Spock vaporizes Rock")
+else:
+    print()
+    
+   
 
 
 
@@ -32,13 +35,10 @@ ready_to_play = input("Would you like to play a game of RPSLS?")
 #         AI
 # Game (game logic here)
 
-# -Rock crushes Scissors 
-# -Scissors cuts Paper 
-# -Paper covers Rock 
-# Rock crushes Lizard 
-# Lizard poisons Spock 
-# Spock smashes Scissors 
-# Scissors decapitates Lizard
-# Lizard eats Paper 
-# Paper disproves Spock 
+
+
+
+
+
+
 # Spock vaporizes Rock        
