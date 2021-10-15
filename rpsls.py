@@ -2,15 +2,27 @@ from ast import get_source_segment
 import random
 from typing import AsyncIterable
 
+
 display_greeting = print("Welcome to Rock, Paper, Scissors, Lizard, Spock!!!")
+
 
 answer = input("Would you like to play a game of RPSLS?")
 if answer == 'yes':
-    print("Here are the rules:", "\n" "1. Paper beats Rock", "\n" "2. Rock beats Scissors", "\n" "3. Paper covers Rock", "\n" "4. Rock crushes Lizard", "\n" "5. Lizard poisons Spock", "\n" "6. Spock smashes Scissors", "\n" "7. Scissors decapitates Lizard", "\n" "8. Lizard eats Paper", "\n" "9. Paper disproves Spock", "\n" "10. Spock vaporizes Rock")
+    print("Here are the rules for this best 2 out of 3 game:", "\n" "1. Paper beats Rock", "\n" "2. Rock beats Scissors", "\n" "3. Paper covers Rock", "\n" "4. Rock crushes Lizard", "\n" "5. Lizard poisons Spock", "\n" "6. Spock smashes Scissors", "\n" "7. Scissors decapitates Lizard", "\n" "8. Lizard eats Paper", "\n" "9. Paper disproves Spock", "\n" "10. Spock vaporizes Rock", "\n" "Whichever player wins 2 out of 3 games first, wins!")
 else:
-    print()
-    
-   
+    pass
+    # return input
+
+
+player_mode = input("If you would like to play against the computer please press 1, if you would like to play with another player please select 2!")
+if player_mode == "1":
+    print("You have selected to play against the computer!")
+elif player_mode == "2":
+    print("You have choosen to play against another player!")
+else:    
+    pass
+    # print("Please make a selection from the list...")
+    # return to game_mode input
 
 
 
