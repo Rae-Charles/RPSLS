@@ -1,7 +1,7 @@
 from ast import get_source_segment
 import random
 from typing import AsyncIterable
-
+import math
 
 display_greeting = print("Welcome to Rock, Paper, Scissors, Lizard, Spock!!!")
 
@@ -26,30 +26,45 @@ player_name = input("Player please enter your name: ")
 print(f"Let's get ready to rumble {player_name}!!")
 
 
-player1_gesture = 
-# player1_gesture = input("Player, please select your gesture:" , "\n" "Press 1 for Rock", "\n" "Press 2 for Paper", "\n" "Press 3 for Scissors", "\n" "Press 4 for Lizard", "\n" "Press 5 for Spock")
-# print("Thank you for your selection!")
+def play():
+    user =  input("What's your choice? 'ro' for rock, 'pa' for paper, 'sc' for scissors, 'sp' for spock, or 'li' for lizard?" '\n')
+    user = user.lower()
+
+    computer = random.choice(['ro', 'pa', 'sc', 'sp', 'li'])
+
+    if user == computer:
+        return (0, user, computer)
+
+    if is_win (user, computer):
+        return (1, user, computer)
+
+    return (-1, user, computer)
 
 
-# player2_gesture = input("Player, please select your gesture:" , "\n" "Press 1 for Rock", "\n" "Press 2 for Paper", "\n" "Press 3 for Scissors", "\n" "Press 4 for Lizard", "\n" "Press 5 for Spock")
-#     print("Thank you for your selection!")
+def is_win(player, opponent):
+    if (player == 'ro' and opponent == 'sc') or (player == 'sc' and opponent == 'pa') or (player == 'pa' and opponent == 'ro') or (player == 'li' and opponent == 'pa') or (player == 'li' and opponent == 'sp') or (player == 'ro' and opponent == 'li') or (player == 'sp' and opponent == 'sc') or (player == 'sp' and opponent == 'ro'):
+        return True
+    return False    
+
+
+def play_best_of(n):
+    player_wins = 0
+    computer_wins = 0
+    wins_necessary = math.cell(n/2)
+    while player_wins < wins_necessary and computer_wins < wins_necessary
+        result, user, copmuter = play()
+
+        if result == 0:
+            print("It is a tie. You and the computer have both chosen {}. \n.format{user}")
+
+        elif result == 1:    
+            print("Great job, you won! You chose {} and the computer chose {}. \n.format{user}{computer}")
+
+        elif result == -1:
+            print("You lost, what a shame! You chose {} and the computer trumped you with {}! \n.format{user}{computer}")
 
 
 
-
-# 8. compare our two gestures
-# Rock crushes Scissors 
-# Scissors cuts Paper 
-# Paper covers Rock 
-# Rock crushes Lizard 
-# Lizard poisons Spock 
-# Spock smashes Scissors 
-# Scissors decapitates Lizard
-# Lizard eats Paper 
-# Paper disproves Spock 
-# Spock vaporizes Rock
-#    -same thing? no points!
-# 
 
 # 9. declare winner and give them 1 point
 # 10. check scores to see if someone has 2 pts (best 2 of 3)
