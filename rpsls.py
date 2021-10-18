@@ -50,9 +50,9 @@ def is_win(player, opponent):
 def play_best_of(n):
     player_wins = 0
     computer_wins = 0
-    wins_necessary = math.cell(n/2)
-    while player_wins < wins_necessary and computer_wins < wins_necessary
-        result, user, copmuter = play()
+    wins_necessary = math.ceil(n/2)
+    while player_wins < wins_necessary and computer_wins < wins_necessary:
+        result, user, computer = play()
 
         if result == 0:
             print("It is a tie. You and the computer have both chosen {}. \n.format{user}")
@@ -60,19 +60,21 @@ def play_best_of(n):
         elif result == 1:    
             print("Great job, you won! You chose {} and the computer chose {}. \n.format{user}{computer}")
 
-        elif result == -1:
+        else:
+            computer_wins += 1
             print("You lost, what a shame! You chose {} and the computer trumped you with {}! \n.format{user}{computer}")
 
+    if player_wins > computer_wins:
+        print("You have won the best of {} games! Congratulations!".format(n))
+
+    else:
+        print("You have lost the best of {} games, how embarrasing! Game over.".format(n))
 
 
 
-# 9. declare winner and give them 1 point
-# 10. check scores to see if someone has 2 pts (best 2 of 3)
-# 11. if no winner, loop back to step 6 and go again
-# 12. if there is a winner, congrats!end game
 
 
-# Classes:
-#    Player-human
-#         AI
-# Game (game logic here)   
+
+
+
+
