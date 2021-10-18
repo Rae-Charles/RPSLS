@@ -26,7 +26,7 @@ player_name = input("Player please enter your name: ")
 print(f"Let's get ready to rumble {player_name}!!")
 
 
-
+player1_gesture = 
 # player1_gesture = input("Player, please select your gesture:" , "\n" "Press 1 for Rock", "\n" "Press 2 for Paper", "\n" "Press 3 for Scissors", "\n" "Press 4 for Lizard", "\n" "Press 5 for Spock")
 # print("Thank you for your selection!")
 
@@ -50,10 +50,10 @@ print(f"Let's get ready to rumble {player_name}!!")
 # Spock vaporizes Rock
 #    -same thing? no points!
 # 
-# 
+
 # 9. declare winner and give them 1 point
 # 10. check scores to see if someone has 2 pts (best 2 of 3)
-# 11. in no winner, loop back to step 6 and go again
+# 11. if no winner, loop back to step 6 and go again
 # 12. if there is a winner, congrats!end game
 
 
