@@ -23,12 +23,12 @@ class RunGame:
 
     def display_welcome(self):
         print('\n-- Welcome to Rock, Paper, Scissors, Lizard, Spock! --')
-        print(f'\n-Here are the rules of the game: -\n')
-        print(f'Rock beats Scissors, and Rock beats Lizard!')
-        print(f'Paper beats Rock, and Paper beats Spock!')
-        print(f'Sissiors beats paper, and Scissors beats Lizard! ')
-        print(f'Lizard beats paper, and Lizard beats Spock!')
-        print(f'Spock beats Rock, and Spock beats Scissors!\n')
+        print(f'\n-Here are the rules of the game: also in readme file-\n')
+        print(f'Rock beats Scissors, and Rock crushes Lizard!')
+        print(f'Paper covers Rock, and Paper disproves Spock!')
+        print(f'Scissors cut paper, and Scissors decapitate Lizard! ')
+        print(f'Lizard eats paper, and Lizard poisons Spock!')
+        print(f'Spock vaporizes Rock, and Spock smashes Scissors!\n')
         print(f'\n--Winner is the best 2 out of 3! --\n')
 
 
